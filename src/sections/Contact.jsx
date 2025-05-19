@@ -5,7 +5,7 @@ import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
 
 const Contact = () => {
-  const formRef = useRef(null);
+  const formRef = useRef(null); 
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -43,8 +43,8 @@ const Contact = () => {
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Got Ideas? Let's Bring Them to Life!"
+          sub="💬 Tap In – Let's Make Magic! 🚀"
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
@@ -81,7 +81,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message">Your Message</label>
+                  <label htmlFor="message">Drop Your Query or Message Here</label>
                   <textarea
                     id="message"
                     name="message"

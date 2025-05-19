@@ -12,82 +12,104 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  name: "Projects & Achievements",
+  link: "#projects-achievements",
+},
 ];
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
+  { value: 15, suffix: "+", label: "Experience" },
   { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
+
+   {
+    imgPath: "public/images/x.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/AdobeStock_463597047_Preview.jpeg",
+    title: "Fast Learner",
+    desc: "Quickly adapts to new technologies and development practices, eager to grow and improve.",
+  },
+ 
+  {
+    imgPath: "/images/AdobeStock_1131686961_Preview.jpeg",
+    title: "Team Collaboration",
+    desc: "Works well in collaborative environments, contributing effectively to team goals.",
+  },
+  
+  {
+    imgPath: "/images/AdobeStock_1268059459_Preview.jpeg",
+    title: "Version Control (Git)",
+    desc: "Comfortable using Git for version control, collaborating on projects with clean code management.",
+  },
+
+  {
+    imgPath: "/images/AdobeStock_1268389642_Preview.jpeg",
+    title: "Problem Solver",
+    desc: "Able to identify issues and find effective solutions during the development process.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/AdobeStock_1340499294_Preview.jpeg",
+    title: "Responsive Design",
+    desc: "Builds web applications that work seamlessly across all devices and screen sizes.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/AdobeStock_1131475050_Preview.jpeg",
+    title: "Creative Thinker",
+    desc: "Brings innovative ideas to the table, improving UI/UX experiences.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -102,7 +124,8 @@ const techStackImgs = [
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
   },
-  {
+
+   {
     name: "Interactive Developer",
     imgPath: "/images/logos/three.png",
   },
@@ -131,7 +154,8 @@ const techStackIcons = [
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
-  {
+
+   {
     name: "Interactive Developer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
@@ -145,44 +169,42 @@ const techStackIcons = [
   },
 ];
 
-const expCards = [
+const expCards = [ 
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
+    imgPath: "/images/AdobeStock_1370224271_Preview.jpeg",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
-    date: "January 2023 - Present",
+    date: "April 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed and maintained user-facing features for the Student Registration System.",
+      "Collaborated with the team to design and implement interactive user interfaces.",
+      "Optimized application performance for a smooth and responsive user experience.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
+    imgPath: "/images/AdobeStock_1483012620_Preview.jpeg",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Project Contributor",
+    date: "April 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Contributed to frontend and backend development tasks, assisting in building features and resolving bugs in team projects.",
+      "Collaborated with team members to review code, share insights, and implement best practices for clean and maintainable code.",
+      "Participated in project planning and brainstorming sessions, providing ideas for user experience improvements and feature enhancements.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
+    imgPath: "/images/AdobeStock_481662091_Preview.jpeg",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "React Trainee Developer",
+    date: "May 2025",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built and optimized user interfaces using React components, ensuring responsiveness and smooth navigation.",
+      "Collaborated on small projects and coding challenges, focusing on React hooks, state management, and component lifecycle.",
+      "Debugged and resolved issues with component rendering, API calls, and styling inconsistencies.",
     ],
   },
 ];
+
 
 const expLogos = [
   {
@@ -199,50 +221,38 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
+ const projects = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+    name: "Online Tutor System",
+    description: "Developed an online tutor system with my team to connect students and educators seamlessly for interactive learning experiences.Enables students to schedule sessions, submit assignments, and participate in interactive learning.",
+    imgPath: "/images/AdobeStock_579147137_Preview.jpeg",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+    name: "Virtual ATM Machine",
+    description: "Built a virtual ATM system with my team that handles banking transactions such as deposits, withdrawals, and balance inquiries securely. Integrates with backend systems to validate user authentication and transaction history.",
+    imgPath: "/images/AdobeStock_1260909107_Preview.jpeg",
+  },
+ 
+];
+
+
+const achievements = [
+  {
+    name: "BCG GenAI Consulting Job Simulation",
+    description:
+      "Developed an AI-powered financial chatbot, utilizing Excel, Python, pandas, and NLP skills. Doing this program confirmed that i enjoy working on translating complex financial data into accessible insights through AI.",
+    imgPath: "/images/BCGX.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+    name: "Accenture Data Analytics & Visualization Simulation",
+    description:
+      "Completed a simulation focused on advising a hypothetical social media client as a Data Analyst at Accenture. Cleaned, modeled, and analyzed client data, created visualizations, and presented insights.",
+    imgPath: "/images/accenture.jpeg",
   },
 ];
+
+export { projects, achievements };
+
 
 const socialImgs = [
   {
@@ -270,7 +280,6 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
   socialImgs,
   techStackIcons,
   techStackImgs,

@@ -1,45 +1,45 @@
 import { useRef } from "react";
 
 const GlowCard = ({ card, index, children }) => {
-  // refs for all the cards
+  // Refs for all the cards
   const cardRefs = useRef([]);
 
-  // when mouse moves over a card, rotate the glow effect
+  // Mouse move event to create glow effect
   const handleMouseMove = (index) => (e) => {
-    // get the current card
     const card = cardRefs.current[index];
     if (!card) return;
 
-    // get the mouse position relative to the card
     const rect = card.getBoundingClientRect();
     const mouseX = e.clientX - rect.left - rect.width / 2;
     const mouseY = e.clientY - rect.top - rect.height / 2;
 
-    // calculate the angle from the center of the card to the mouse
     let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
-
-    // adjust the angle so that it's between 0 and 360
     angle = (angle + 360) % 360;
 
-    // set the angle as a CSS variable
     card.style.setProperty("--start", angle + 60);
   };
 
-  // return the card component with the mouse move event
+  // Render the card component
   return (
     <div
       ref={(el) => (cardRefs.current[index] = el)}
       onMouseMove={handleMouseMove(index)}
-      className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
+      className="card card-border timeline-card rounded-xl p-5 flex items-center gap-4 bg-gray-800 hover:shadow-2xl transition duration-300 w-full h-full"
+      style={{ height: "300px" }} // Ensuring it is square
     >
-      <div className="glow"></div>
-      <div className="flex items-center gap-1 mb-5">
-        {Array.from({ length: 5 }, (_, i) => (
-          <img key={i} src="/images/star.png" alt="star" className="size-5" />
-        ))}
-      </div>
-      <div className="mb-5">
-        <p className="text-white-50 text-lg">{card.review}</p>
+      {/* Card Image */}
+      {card.imgPath && (
+        <img
+          src={card.imgPath}
+          alt={card.title}
+          className="w-32 h-32 object-cover rounded-lg"
+        />
+      )}
+
+      {/* Card Content */}
+      <div className="flex flex-col justify-center">
+        <div className="text-xl font-bold text-white mb-1">{card.title}</div>
+        <div className="text-gray-400 text-sm">{card.description}</div>
       </div>
       {children}
     </div>

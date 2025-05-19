@@ -16,10 +16,22 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
-      </div>
+    <section
+      id="hero"
+      className="relative overflow-hidden w-full h-screen"
+    >
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/videos/AdobeStock_1488337460_Video_4K_Preview.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+
 
       <div className="hero-layout">
         {/* LEFT: Hero Content */}
@@ -27,7 +39,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                 Bringing
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
@@ -46,29 +58,30 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>to Life with Creative Designs </h1>
+              <h1>and Powerful Code</h1>
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adrian, a developer based in Croatia with a passion for
-              code.
+                Hi, I'm Pooja, a passionate web developer focused on modern animations and interactive experiences.
             </p>
 
             <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
+              text="EXPLORE MY PROJECTS ↓"
+              className="md:w-80 md:h-16 w-60 h-12 bg-purple-300 text-black"
               id="counter"
             />
+
           </div>
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure>
-          <div className="hero-3d-layout">
-            <HeroExperience />
-          </div>
-        </figure>
+<figure className="absolute left-0 top-0 w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
+  <div className="hero-3d-layout">
+    <HeroExperience />
+  </div>
+</figure>
+
       </div>
 
       <AnimatedCounter />

@@ -49,16 +49,16 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img 
+               src="/images/AdobeStock_1427052362_Preview_1.jpeg" alt="New Project Image" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                A Directory Management System designed with a user friendly command-line interface
+               
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                The system uses basic commands of Ubuntu, showcasing practical expertise in Linux command line utilities.
               </p>
             </div>
           </div>
@@ -67,18 +67,21 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+ src="/images/AdobeStock_304517590_Preview.jpeg"
+  alt="Adobe Stock Image"/>
+                 
+                
+                
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>A Ping-Pong Game developed using C++ and some concepts of OOPS programming</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/AdobeStock_1099780335_Preview.jpeg" alt="Adobe Stock Image" />
+s
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Employment Management System that stores and manages the information using file handling</h2>
             </div>
           </div>
         </div>
